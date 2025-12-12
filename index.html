@@ -4,13 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="high.css">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p>Paste a URL or enter text to create your QR code</p>
+        </header>
 
+        <div class="input-group">
+            <input type="text" id="qr-input" placeholder="Enter URL or text here..." autocomplete="off">
+            <button id="generate-btn">Generate QR Code</button>
+        </div>
+
+        <div class="qr-code-wrapper" id="qr-wrapper">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="high.js"></script>
 
 </html>
